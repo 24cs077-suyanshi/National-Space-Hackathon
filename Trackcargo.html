@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Track Cargo - Cargo Management System</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial,sans-serif;
+  text-align: center;
+  background-image: url(file:///C:/Users/Manish%20Patel/Pictures/WhatsApp%20Image%202025-04-04%20at%2020.44.43_768d2ce6.jpg);
+}
+.container {
+  margin: 20px auto auto;
+  padding: 20px;
+  background: white none repeat scroll 0%;
+  width: 80%;
+}
+h1 {
+  color: #333333;
+}
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+label {
+  display: block;
+  font-weight: bold;
+}
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  width: 100%;
+  margin-top: 5px;
+}
+button {
+  border:  none;
+  padding: 10px 20px;
+  background: #28a745 none repeat scroll 0%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: red;
+}
+.map-container {
+  border: 1px solid #cccccc;
+  margin-top: 20px;
+  height: 400px;
+}
+.updates {
+  margin-top: 20px;
+  text-align: left;
+}
+.updates h2 {
+  color: #2196f3;
+}
+.updates ul {
+  padding: 0;
+  list-style-type: none;
+}
+.updates li {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  background: #f9f9f9 none repeat scroll 0%;
+  margin-bottom: 10px;
+}
+.navbar {
+  padding: 10px 0;
+  background: whitesmoke none repeat scroll 0%;
+  color: black;
+  text-align: center;
+  top: 0;
+  z-index: 1000;
+}
+.navbar a {
+  margin: 0 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+</style>
+</head><body>
+<div class="container">
+<h1>Track Cargo</h1>
+<p>Enter your tracking ID to view the live location and updates of your cargo.</p>
+<div class="form-group">
+<label for="trackingId">Tracking ID:</label>
+<input id="trackingId" placeholder="Enter Tracking ID" type="text">
+</div>
+<button onclick="trackCargo()">Track</button>
+<div class="map-container" id="map">
+<!-- Map will be displayed here -->
+</div>
+<div class="updates">
+<h2>Live Updates</h2>
+<ul id="updatesList">
+<!-- Updates will be displayed here -->
+</ul>
+<div class="navbar">
+<a href="page1addcargo.html">Add Cargo</a>
+<a href="page3about.html">About</a>
+<a href="page4help.html">Help</a>
+<a href="#Track%20Shipment">Track Shipment</a>
+</div>
+</div>
+</div>
+<script>
+function trackCargo() {
+const trackingId = document.getElementById('trackingId').value;
+if (!trackingId) {
+alert('Please enter a valid Tracking ID.');
+return;
+}
+// Simulate live tracking and updates
+document.getElementById('map').innerHTML = `<p>Displaying live location for Tracking ID: ${trackingId}</p>`;
+const updatesList = document.getElementById('updatesList');
+updatesList.innerHTML = `
+<li>Package picked up from origin.</li>
+<li>In transit: Reached sorting facility.</li>
+<li>Out for delivery.</li>
+<li>Delivered to destination.</li>
+`;
+}
+</script>
+</body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Cargo Management System</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial,sans-serif;
+  background-color: #f4f4f4;
+  background-position:  center center;
+  text-align: center;
+  background-image: url(file:///C:/Users/Manish%20Patel/Pictures/WhatsApp%20Image%202025-04-04%20at%2020.44.43_768d2ce6.jpg);
+}
+.container {
+  margin: 20px auto auto;
+  padding: 20px;
+  background: white none repeat scroll 0%;
+  width: 80%;
+}
+h1 {
+  color: #333333;
+}
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+label {
+  display: block;
+  font-weight: bold;
+}
+input, select {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  width: 100%;
+  margin-top: 5px;
+}
+button {
+  border:  none;
+  padding: 10px 20px;
+  background: #28a745 none repeat scroll 0%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: red;
+}
+.info {
+  border-left: 5px solid #2196f3;
+  padding: 15px;
+  background: #e7f3fe none repeat scroll 0%;
+  margin-top: 20px;
+  text-align: left;
+}
+.navbar {
+  padding: 10px 0;
+  background: whitesmoke none repeat scroll 0%;
+  color: black;
+  text-align: center;
+  top: 0;
+  z-index: 1000;
+}
+.navbar a {
+  margin: 0 15px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+</style></head>
+<body><a href="Addcargo%20-Cargo%20Management%20Syatem.html"><br></a>
+<div class="container">
+<h1>Cargo Management System</h1>
+<p>Manage your cargo shipments efficiently with our simple system.</p><div class="info">
+<h2>About</h2>
+<p>The Cargo Management System helps businesses track and manage cargo
+shipments. It provides an easy way to log cargo details and ensure
+smooth transportation.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Easy cargo entry</li>
+<li>Basic shipment tracking</li>
+<li>User-friendly interface</li>
+</ul>
+</div>
+<h2>Add Cargo</h2>
+<form>
+<div class="form-group">
+<label for="cargoName">Cargo Name:</label>
+<input id="cargoName" placeholder="Enter cargo name" required="" type="text">
+</div>
+<div class="form-group">
+<label for="weight">Weight (kg):</label>
+<input id="weight" placeholder="Enter weight" required="" type="number">
+</div>
+<div class="form-group">
+<label for="destination">Destination:</label>
+<input id="destination" placeholder="Enter destination" required="" type="text">
+</div>
+<button onclick="myfunction()">Submit</button>
+<script>
+function myfunction() {
+alert("Cargo details submitted successfully!");
+}
+</script>
+<br>
+<div class="navbar">
+<br>
+<a href="Addcargo.html">Add Cargo</a>
+<a href="ab.html">About</a>
+<a href="Help.html">help</a>
+<a href="Trackcargo.html">Track Shipment</a>
+</div>
+</form>
+</div>
+</body></html>
